@@ -6,4 +6,9 @@ abstract class Styles {
     color: AppColors.primary,
     fontWeight: FontWeight.w500,
   );
+
+  static const TextStyle heading1 = TextStyle(
+    fontSize: 32,
+    fontWeight: FontWeight.bold,
+  );
 }
