@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
-import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
+import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/signup_view_body.dart';
 
 class SignupView extends StatelessWidget {
@@ -13,15 +13,9 @@ class SignupView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: AppColors.backgroundColor,
         elevation: 0,
-        title: Row(
-          children: [
-            Icon(Icons.school_outlined, color: AppColors.primary),
-            SizedBox(width: 5),
-            Text("Skills Academy", style: Styles.appBarTitle),
-          ],
-        ),
+        title: const AppBarTitle(),
       ),
-      body: SignupViewBody(),
+      body: const SignupViewBody(),
     );
   }
 }
