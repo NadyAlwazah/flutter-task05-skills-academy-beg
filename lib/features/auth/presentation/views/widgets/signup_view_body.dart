@@ -4,6 +4,7 @@ import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/custom_button.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/form_label.dart';
+import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/terms_and_conditions.dart';
 
 class SignupViewBody extends StatefulWidget {
@@ -75,6 +76,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                   if (formKey.currentState!.validate()) {}
                 },
               ),
+
+              const SizedBox(height: 16),
+
+              const OrDivider(),
+
+              const SizedBox(height: 16),
             ],
           ),
         ),
