@@ -11,4 +11,15 @@ abstract class Styles {
     fontSize: 28,
     fontWeight: FontWeight.bold,
   );
+
+  static const TextStyle termsNormal = TextStyle(
+    color: Color(0xFF606168),
+    fontSize: 14,
+  );
+
+  static const TextStyle termsLink = TextStyle(
+    color: AppColors.primary,
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+  );
 }

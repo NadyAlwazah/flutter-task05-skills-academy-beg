@@ -3,6 +3,7 @@ import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/form_label.dart';
+import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/terms_and_conditions.dart';
 
 class SignupViewBody extends StatefulWidget {
   const SignupViewBody({super.key});
@@ -60,6 +61,10 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 textInputType: TextInputType.text,
                 obscureText: true,
               ),
+
+              const SizedBox(height: 8),
+
+              const TermsAndConditions(),
             ],
           ),
         ),
