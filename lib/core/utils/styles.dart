@@ -12,12 +12,12 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
   );
 
-  static const TextStyle termsNormal = TextStyle(
+  static const TextStyle authText = TextStyle(
     color: Color(0xFF606168),
     fontSize: 14,
   );
 
-  static const TextStyle termsLink = TextStyle(
+  static const TextStyle authAction = TextStyle(
     color: AppColors.primary,
     fontWeight: FontWeight.w600,
     fontSize: 14,

@@ -36,10 +36,10 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
             child: Text.rich(
               TextSpan(
                 children: [
-                  TextSpan(text: "I agree to the ", style: Styles.termsNormal),
-                  TextSpan(text: "Terms of Service ", style: Styles.termsLink),
-                  TextSpan(text: "and ", style: Styles.termsNormal),
-                  TextSpan(text: "Privacy Policy", style: Styles.termsLink),
+                  TextSpan(text: "I agree to the ", style: Styles.authText),
+                  TextSpan(text: "Terms of Service ", style: Styles.authAction),
+                  TextSpan(text: "and ", style: Styles.authText),
+                  TextSpan(text: "Privacy Policy", style: Styles.authAction),
                 ],
               ),
             ),

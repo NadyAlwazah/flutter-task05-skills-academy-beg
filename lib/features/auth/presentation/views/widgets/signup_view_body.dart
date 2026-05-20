@@ -5,6 +5,7 @@ import 'package:flutter_task05_skills_academy_beg/core/widgets/custom_button.dar
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/auth_buttons_row.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/form_label.dart';
+import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/have_an_account_widget.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/terms_and_conditions.dart';
 
@@ -20,7 +21,12 @@ class _SignupViewBodyState extends State<SignupViewBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.only(
+        left: 16.0,
+        right: 16.0,
+        top: 16.0,
+        bottom: 32,
+      ),
       child: SingleChildScrollView(
         child: Form(
           key: formKey,
@@ -85,6 +91,10 @@ class _SignupViewBodyState extends State<SignupViewBody> {
               const SizedBox(height: 16),
 
               const AuthButtonsRow(),
+
+              const SizedBox(height: 100),
+
+              const HaveAnAccountWidget(),
             ],
           ),
         ),
