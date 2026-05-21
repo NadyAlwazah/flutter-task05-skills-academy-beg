@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/signup_view.dart';
 
+import 'core/app/routes.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,9 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp.router(
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
-      home: SignupView(),
     );
   }
 }
