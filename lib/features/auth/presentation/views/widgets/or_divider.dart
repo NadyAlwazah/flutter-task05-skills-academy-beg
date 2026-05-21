@@ -9,7 +9,10 @@ class OrDivider extends StatelessWidget {
       children: [
         Expanded(child: Divider()),
         SizedBox(width: 20),
-        Text("OR SIGN UP WITH", style: TextStyle(color: Color(0xFF777A86))),
+        Text(
+          "OR SIGN UP WITH",
+          style: TextStyle(fontSize: 13, color: Color(0xFF777A86)),
+        ),
         SizedBox(width: 20),
         Expanded(child: Divider()),
       ],

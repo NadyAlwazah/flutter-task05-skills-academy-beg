@@ -9,6 +9,8 @@ import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/vie
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/terms_and_conditions.dart';
 
+import '../../../../../core/utils/validators.dart';
+
 class SignupViewBody extends StatefulWidget {
   const SignupViewBody({super.key});
 
@@ -18,6 +20,31 @@ class SignupViewBody extends StatefulWidget {
 
 class _SignupViewBodyState extends State<SignupViewBody> {
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  bool isTermsAccepted = false;
+
+  void _showTermsError() {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        backgroundColor: Colors.red,
+        behavior: SnackBarBehavior.floating,
+        content: Text(
+          "Please accept the Terms and Conditions to continue",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
+
+  void _onRegister() {
+    if (!formKey.currentState!.validate()) return;
+
+    if (!isTermsAccepted) {
+      _showTermsError();
+      return;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -50,6 +77,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
               const CustomTextFormField(
                 hintText: "Enter your full name",
                 textInputType: TextInputType.text,
+                validator: Validators.validateFullName,
               ),
 
               const SizedBox(height: 8),
@@ -58,7 +86,8 @@ class _SignupViewBodyState extends State<SignupViewBody> {
 
               const CustomTextFormField(
                 hintText: "name@example.com",
-                textInputType: TextInputType.text,
+                textInputType: TextInputType.emailAddress,
+                validator: Validators.validateEmail,
               ),
 
               const SizedBox(height: 8),
@@ -69,20 +98,20 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 hintText: "Min. 8 characters ",
                 textInputType: TextInputType.text,
                 obscureText: true,
+                validator: Validators.validatePassword,
               ),
 
               const SizedBox(height: 8),
 
-              const TermsAndConditions(),
-
-              const SizedBox(height: 8),
-
-              CustomButton(
-                text: "Register",
-                onPressed: () {
-                  if (formKey.currentState!.validate()) {}
+              TermsAndConditions(
+                onChanged: (value) {
+                  isTermsAccepted = value;
                 },
               ),
+
+              const SizedBox(height: 8),
+
+              CustomButton(text: "Register", onPressed: _onRegister),
 
               const SizedBox(height: 16),
 

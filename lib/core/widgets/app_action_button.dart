@@ -35,7 +35,8 @@ class AppActionButton extends StatelessWidget {
             text,
             style: const TextStyle(
               color: Color(0xFF2F2F39),
-              fontWeight: FontWeight.w600,
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
             ),
           ),
         ],
