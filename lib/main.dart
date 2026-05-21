@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/signup_view.dart';
 
 import 'core/app/routes.dart';
 

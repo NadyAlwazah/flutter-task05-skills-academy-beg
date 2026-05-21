@@ -8,7 +8,9 @@ import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/vie
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/have_an_account_widget.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/or_divider.dart';
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/widgets/terms_and_conditions.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../core/app/routes.dart';
 import '../../../../../core/utils/validators.dart';
 
 class SignupViewBody extends StatefulWidget {
@@ -43,6 +45,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
       _showTermsError();
       return;
     }
+    context.go(AppRouter.kMain);
   }
 
   @override
