@@ -10,7 +10,7 @@ class AppBarTitle extends StatelessWidget {
     return Row(
       children: [
         const Icon(Icons.school_outlined, color: AppColors.primary),
-        const SizedBox(width: 5),
+        const SizedBox(width: 7),
         Text("Skills Academy", style: Styles.appBarTitle),
       ],
     );

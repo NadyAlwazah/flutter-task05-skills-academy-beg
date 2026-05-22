@@ -5,10 +5,11 @@ abstract class Styles {
   static TextStyle appBarTitle = const TextStyle(
     color: AppColors.primary,
     fontWeight: FontWeight.w500,
+    fontSize: 26,
   );
 
   static const TextStyle heading1 = TextStyle(
-    fontSize: 28,
+    fontSize: 34,
     fontWeight: FontWeight.bold,
   );
 
