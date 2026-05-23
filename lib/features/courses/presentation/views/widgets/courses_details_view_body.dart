@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/about_course_section.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_details_header_stack.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/instructor_info_tile.dart';
 
@@ -20,7 +21,11 @@ class CoursesDetailsViewBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
             child: Column(
-              children: [InstructorInfoTile(instructorName: instructor)],
+              children: [
+                InstructorInfoTile(instructorName: instructor),
+                const SizedBox(height: 16),
+                const AboutCourseSection(),
+              ],
             ),
           ),
         ],

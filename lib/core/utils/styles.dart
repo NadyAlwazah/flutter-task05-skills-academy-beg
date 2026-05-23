@@ -51,4 +51,13 @@ abstract class Styles {
     fontSize: 20,
     fontWeight: FontWeight.w500,
   );
+
+  static const TextStyle descriptionText = TextStyle(
+    color: Color(0xFF606168),
+    fontSize: 15,
+  );
+  static const TextStyle sectionTitle = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w700,
+  );
 }
