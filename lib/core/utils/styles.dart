@@ -29,4 +29,26 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
     fontSize: 17,
   );
+  static const TextStyle textStyle24Bold = TextStyle(
+    fontSize: 24,
+    color: Colors.white,
+    fontWeight: FontWeight.bold,
+  );
+  static const TextStyle textStyle15W500 = TextStyle(
+    color: Colors.white,
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+  );
+  static const TextStyle instructorLabel = TextStyle(
+    color: Color(0xFF606168),
+    fontSize: 12,
+    letterSpacing: 2,
+    fontWeight: FontWeight.w500,
+  );
+
+  static const TextStyle instructorName = TextStyle(
+    color: AppColors.primary,
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+  );
 }

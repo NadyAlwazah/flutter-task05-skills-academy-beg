@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
+import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 
 class CoursesDetailsHeaderStack extends StatelessWidget {
   const CoursesDetailsHeaderStack({super.key, required this.title});
@@ -40,11 +41,7 @@ class CoursesDetailsHeaderStack extends StatelessWidget {
                 // Title
                 Text(
                   title,
-                  style: const TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: Styles.textStyle24Bold,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -52,11 +49,7 @@ class CoursesDetailsHeaderStack extends StatelessWidget {
                 // Description
                 const Text(
                   "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  style: Styles.textStyle15W500,
                 ),
               ],
             ),

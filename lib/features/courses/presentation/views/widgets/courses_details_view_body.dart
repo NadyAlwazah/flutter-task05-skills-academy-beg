@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_details_header_stack.dart';
+import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/instructor_info_tile.dart';
 
 class CoursesDetailsViewBody extends StatelessWidget {
   const CoursesDetailsViewBody({
@@ -12,7 +13,18 @@ class CoursesDetailsViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      child: Column(children: [CoursesDetailsHeaderStack(title: title)]),
+      child: Column(
+        children: [
+          CoursesDetailsHeaderStack(title: title),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            child: Column(
+              children: [InstructorInfoTile(instructorName: instructor)],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
