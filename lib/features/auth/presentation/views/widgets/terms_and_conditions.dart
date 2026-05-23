@@ -17,22 +17,28 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
     return Transform.translate(
       offset: const Offset(-13, 0),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Checkbox(
-            activeColor: AppColors.primary,
-            value: isChecked,
-            onChanged: (value) {
-              setState(() {
-                isChecked = value!;
-                widget.onChanged(value);
-              });
-            },
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadiusGeometry.circular(5),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 5),
+            child: Transform.scale(
+              scale: 1.2,
+              child: Checkbox(
+                activeColor: AppColors.primary,
+                value: isChecked,
+                onChanged: (value) {
+                  setState(() {
+                    isChecked = value!;
+                    widget.onChanged(value);
+                  });
+                },
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                side: const BorderSide(width: 1, color: Color(0xFFC4C3CB)),
+              ),
             ),
-            side: const BorderSide(width: 1, color: Color(0xFFC4C3CB)),
           ),
-
           const Expanded(
             child: Text.rich(
               TextSpan(
@@ -47,6 +53,38 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
           ),
         ],
       ),
+
+      // child: Row(
+      //   children: [
+      //     Checkbox(
+      //       activeColor: AppColors.primary,
+      //       value: isChecked,
+      //       onChanged: (value) {
+      //         setState(() {
+      //           isChecked = value!;
+      //           widget.onChanged(value);
+      //         });
+      //       },
+      //       shape: RoundedRectangleBorder(
+      //         borderRadius: BorderRadiusGeometry.circular(5),
+      //       ),
+      //       side: const BorderSide(width: 1, color: Color(0xFFC4C3CB)),
+      //     ),
+
+      //     const Expanded(
+      //       child: Text.rich(
+      //         TextSpan(
+      //           children: [
+      //             TextSpan(text: "I agree to the ", style: Styles.authText),
+      //             TextSpan(text: "Terms of Service ", style: Styles.authAction),
+      //             TextSpan(text: "and ", style: Styles.authText),
+      //             TextSpan(text: "Privacy Policy", style: Styles.authAction),
+      //           ],
+      //         ),
+      //       ),
+      //     ),
+      //   ],
+      // ),
     );
   }
 }

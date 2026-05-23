@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/about_course_section.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_details_header_stack.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/instructor_info_tile.dart';
+import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/what_you_will_learn_section.dart';
 
 class CoursesDetailsViewBody extends StatelessWidget {
   const CoursesDetailsViewBody({
@@ -25,6 +26,8 @@ class CoursesDetailsViewBody extends StatelessWidget {
                 InstructorInfoTile(instructorName: instructor),
                 const SizedBox(height: 16),
                 const AboutCourseSection(),
+                const SizedBox(height: 20),
+                const WhatYouWillLearnSection(),
               ],
             ),
           ),

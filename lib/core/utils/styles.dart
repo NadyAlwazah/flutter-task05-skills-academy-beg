@@ -58,6 +58,6 @@ abstract class Styles {
   );
   static const TextStyle sectionTitle = TextStyle(
     fontSize: 18,
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w500,
   );
 }
