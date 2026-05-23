@@ -13,4 +13,6 @@ class AssetsData {
   static const brandingMasterclass = "assets/images/branding_masterclass.png";
   static const agileLeadershipCourse =
       "assets/images/agile_leadership_course.png";
+  static const appBarActionsDetailsViewSvg =
+      "assets/images/appBarActionsDetailsView.svg";
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/core/app/routes.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
+import 'package:go_router/go_router.dart';
 
 class CourseCardItem extends StatelessWidget {
   final String imagePath;
@@ -26,7 +28,12 @@ class CourseCardItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        GoRouter.of(context).push(
+          AppRouter.kCourseDetailsView,
+          extra: {'title': title, 'instructor': instructor},
+        );
+      },
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
