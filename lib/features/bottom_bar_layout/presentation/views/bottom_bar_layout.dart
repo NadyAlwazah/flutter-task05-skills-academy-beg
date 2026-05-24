@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/account_view.dart';
 import 'package:flutter_task05_skills_academy_beg/features/bottom_bar_layout/presentation/views/widgets/bottom_nav_item.dart';
+import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/course_details_view.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/courses_view.dart';
 import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/my_learning_view.dart';
 
@@ -14,19 +16,41 @@ class BottomBarLayout extends StatefulWidget {
 class _BottomBarLayoutState extends State<BottomBarLayout> {
   int currentIndex = 0;
 
-  final List<Widget> screens = const [
-    CoursesView(),
-    MyLearningView(),
-    AccountView(),
-  ];
+  Widget? selectedCoursePage;
+  List<Widget> _buildScreens() {
+    return [
+      CoursesView(
+        onCourseTap: (course) {
+          setState(() {
+            selectedCoursePage = CourseDetailsView(
+              title: course.title,
+              instructor: course.instructor,
+              onBack: () {
+                setState(() {
+                  selectedCoursePage = null;
+                });
+              },
+            );
+          });
+        },
+      ),
+
+      const MyLearningView(),
+      const AccountView(),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screens[currentIndex],
+      backgroundColor: AppColors.backgroundColor,
+      body: selectedCoursePage ?? _buildScreens()[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
-        onTap: (index) => setState(() => currentIndex = index),
+        onTap: (index) => setState(() {
+          currentIndex = index;
+          selectedCoursePage = null; // رجوع للصفحات الأساسية
+        }),
         backgroundColor: Colors.white,
         elevation: 8,
         showSelectedLabels: false,

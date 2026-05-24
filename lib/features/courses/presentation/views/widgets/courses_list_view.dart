@@ -5,7 +5,9 @@ import 'package:flutter_task05_skills_academy_beg/features/courses/data/models/c
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/course_card_item.dart';
 
 class CoursesListView extends StatelessWidget {
-  const CoursesListView({super.key});
+  const CoursesListView({super.key, this.onCourseTap});
+
+  final Function(CourseModel course)? onCourseTap;
 
   @override
   Widget build(BuildContext context) {
@@ -89,6 +91,7 @@ class CoursesListView extends StatelessWidget {
           category: course.category,
           categoryTextColor: course.categoryTextColor,
           categoryBackgroundColor: course.categoryBackgroundColor,
+          onTap: () => onCourseTap?.call(course),
         );
       },
     );

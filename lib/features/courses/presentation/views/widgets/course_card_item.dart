@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_task05_skills_academy_beg/core/app/routes.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
-import 'package:go_router/go_router.dart';
 
 class CourseCardItem extends StatelessWidget {
   final String imagePath;
@@ -13,6 +11,8 @@ class CourseCardItem extends StatelessWidget {
   final Color categoryBackgroundColor;
   final Color categoryTextColor;
 
+  final VoidCallback? onTap;
+
   const CourseCardItem({
     super.key,
     required this.imagePath,
@@ -23,17 +23,13 @@ class CourseCardItem extends StatelessWidget {
     required this.category,
     required this.categoryBackgroundColor,
     required this.categoryTextColor,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        GoRouter.of(context).push(
-          AppRouter.kCourseDetailsView,
-          extra: {'title': title, 'instructor': instructor},
-        );
-      },
+      onTap: onTap,
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(

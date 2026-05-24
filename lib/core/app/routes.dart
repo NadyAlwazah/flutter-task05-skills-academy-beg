@@ -1,5 +1,4 @@
 import 'package:flutter_task05_skills_academy_beg/features/auth/presentation/views/signup_view.dart';
-import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/course_details_view.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/languages_special_offer_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,7 +7,6 @@ import '../../features/bottom_bar_layout/presentation/views/bottom_bar_layout.da
 abstract class AppRouter {
   static const String kMain = '/main';
   static const String kLanguagesSpecialOfferScreen = '/languages-offer';
-  static const String kCourseDetailsView = '/course_details';
 
   static final router = GoRouter(
     routes: [
@@ -20,16 +18,6 @@ abstract class AppRouter {
       GoRoute(
         path: kLanguagesSpecialOfferScreen,
         builder: (context, state) => const LanguagesSpecialOfferScreen(),
-      ),
-      GoRoute(
-        path: kCourseDetailsView,
-        builder: (context, state) {
-          final data = state.extra as Map<String, dynamic>;
-          return CourseDetailsView(
-            title: data['title'],
-            instructor: data['instructor'],
-          );
-        },
       ),
     ],
   );

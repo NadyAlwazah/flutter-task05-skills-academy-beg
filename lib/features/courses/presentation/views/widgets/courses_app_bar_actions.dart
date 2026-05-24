@@ -9,7 +9,15 @@ class CoursesAppBarActions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: SvgPicture.asset(AssetsData.profileUserSvg),
+      child: CircleAvatar(
+        radius: 20,
+        child: SvgPicture.asset(
+          AssetsData.profileUserSvg,
+          fit: BoxFit.cover,
+          width: 40,
+          height: 40,
+        ),
+      ),
     );
   }
 }
