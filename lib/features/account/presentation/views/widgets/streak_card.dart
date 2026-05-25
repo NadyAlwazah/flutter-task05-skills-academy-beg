@@ -30,7 +30,7 @@ class StreakCard extends StatelessWidget {
           const SizedBox(height: 8),
 
           const Text(
-            "You're in the top 5% of learners this month. Keep up the momentum to unlock the 'Mastery' badge.",
+            "You're in the top 5% of learners this month. Keep up the momentum to unlock the \"Mastery\" badge.",
             style: TextStyle(color: Colors.white70, fontSize: 16),
           ),
           const SizedBox(height: 16),
