@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/account_cards_section.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/profile_card.dart';
+import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/streak_card.dart';
 
 class AccountViewBody extends StatelessWidget {
   const AccountViewBody({super.key});
@@ -11,7 +12,13 @@ class AccountViewBody extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16.0),
       child: SingleChildScrollView(
         child: Column(
-          children: [ProfileCard(), SizedBox(height: 5), AccountCardsSection()],
+          children: [
+            ProfileCard(),
+            SizedBox(height: 5),
+            AccountCardsSection(),
+            SizedBox(height: 5),
+            StreakCard(),
+          ],
         ),
       ),
     );

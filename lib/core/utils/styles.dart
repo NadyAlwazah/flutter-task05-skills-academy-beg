@@ -43,6 +43,15 @@ abstract class Styles {
     fontWeight: FontWeight.w500,
     fontSize: 14,
   );
+  static const TextStyle textStyle22W300 = TextStyle(
+    fontSize: 22,
+    letterSpacing: 2,
+    fontWeight: FontWeight.w300,
+  );
+  static const TextStyle textStyle29Bold = TextStyle(
+    fontSize: 29,
+    fontWeight: FontWeight.bold,
+  );
   static const TextStyle instructorLabel = TextStyle(
     color: Color(0xFF606168),
     fontSize: 12,
