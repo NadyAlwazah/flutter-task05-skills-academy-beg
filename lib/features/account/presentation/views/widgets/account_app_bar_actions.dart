@@ -6,17 +6,12 @@ class AccountAppBarActions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
       child: CircleAvatar(
         backgroundColor: Colors.white,
         radius: 20,
-        child: Image.asset(
-          AssetsData.accountPhoto,
-          fit: BoxFit.cover,
-          width: 40,
-          height: 40,
-        ),
+        backgroundImage: AssetImage(AssetsData.accountPhoto),
       ),
     );
   }

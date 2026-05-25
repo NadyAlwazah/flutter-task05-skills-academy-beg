@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/account_app_bar_actions.dart';
+import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/account_view_body.dart';
 
 class AccountView extends StatelessWidget {
   const AccountView({super.key});
@@ -17,6 +18,11 @@ class AccountView extends StatelessWidget {
             children: [AppBarTitle(), AccountAppBarActions()],
           ),
         ),
+
+        SizedBox(height: 8),
+
+        // Body
+        Expanded(child: AccountViewBody()),
       ],
     );
   }
