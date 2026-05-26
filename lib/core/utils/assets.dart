@@ -17,5 +17,5 @@ class AssetsData {
       "assets/images/appBarActionsDetailsView.svg";
   static const accountPhoto = "assets/images/account.png";
   static const medalStarSvg = "assets/images/medal_star_svg.svg";
-  static const myLearning = "assets/images/my_learning.jpg";
+  static const myLearningProfile = "assets/images/my_learning_profile.png";
 }

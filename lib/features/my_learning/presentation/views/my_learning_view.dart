@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
+import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_action_avatar.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
-import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_app_bar_actions.dart';
 
 class MyLearningView extends StatelessWidget {
   const MyLearningView({super.key});
@@ -14,7 +15,13 @@ class MyLearningView extends StatelessWidget {
           padding: EdgeInsets.only(top: 35, left: 16, right: 16),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [AppBarTitle(), MyLearningAppBarActions()],
+            children: [
+              AppBarTitle(),
+              AppBarActionAvatar(
+                imagePath: AssetsData.myLearningProfile,
+                isSvg: false,
+              ),
+            ],
           ),
         ),
 

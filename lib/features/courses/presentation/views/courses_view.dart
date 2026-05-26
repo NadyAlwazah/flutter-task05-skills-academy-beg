@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/core/app/routes.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
+import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
+import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_action_avatar.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/data/models/course_model.dart';
-import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_app_bar_actions.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_filter_dropdown.dart';
 import 'package:flutter_task05_skills_academy_beg/features/courses/presentation/views/widgets/courses_view_body.dart';
 import 'package:go_router/go_router.dart';
@@ -58,7 +59,13 @@ class _CoursesViewState extends State<CoursesView> {
             padding: EdgeInsets.only(top: 35),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [AppBarTitle(), CoursesAppBarActions()],
+              children: [
+                AppBarTitle(),
+                AppBarActionAvatar(
+                  imagePath: AssetsData.profileUserSvg,
+                  isSvg: true,
+                ),
+              ],
             ),
           ),
 
