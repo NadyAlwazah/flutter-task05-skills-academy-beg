@@ -1,10 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
+import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_app_bar_actions.dart';
 
 class MyLearningView extends StatelessWidget {
   const MyLearningView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("MyLearningView"));
+    return const Column(
+      children: [
+        // AppBar
+        Padding(
+          padding: EdgeInsets.only(top: 35, left: 16, right: 16),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [AppBarTitle(), MyLearningAppBarActions()],
+          ),
+        ),
+
+        SizedBox(height: 8),
+      ],
+    );
   }
 }
