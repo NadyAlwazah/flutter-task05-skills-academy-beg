@@ -52,6 +52,11 @@ abstract class Styles {
     fontSize: 29,
     fontWeight: FontWeight.bold,
   );
+  static const TextStyle textStyle30W700 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w700,
+    letterSpacing: 1,
+  );
   static const TextStyle instructorLabel = TextStyle(
     color: Color(0xFF606168),
     fontSize: 12,

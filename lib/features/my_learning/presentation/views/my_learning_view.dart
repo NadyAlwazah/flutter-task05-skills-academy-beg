@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_action_avatar.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/app_bar_title.dart';
+import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_view_body.dart';
 
 class MyLearningView extends StatelessWidget {
   const MyLearningView({super.key});
@@ -26,6 +27,9 @@ class MyLearningView extends StatelessWidget {
         ),
 
         SizedBox(height: 8),
+
+        // Body
+        Expanded(child: MyLearningViewBody()),
       ],
     );
   }
