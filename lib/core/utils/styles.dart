@@ -48,6 +48,10 @@ abstract class Styles {
     letterSpacing: 2,
     fontWeight: FontWeight.w300,
   );
+  static const TextStyle textStyle22W500 = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.w500,
+  );
   static const TextStyle textStyle29Bold = TextStyle(
     fontSize: 29,
     fontWeight: FontWeight.bold,
