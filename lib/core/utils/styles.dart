@@ -39,6 +39,21 @@ abstract class Styles {
     fontSize: 15,
     fontWeight: FontWeight.w500,
   );
+  static const TextStyle textStyle12W500 = TextStyle(
+    color: Colors.white,
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+  );
+  static const TextStyle textStyle16W600 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: Colors.white,
+  );
+  static const TextStyle textStyle13W500 = TextStyle(
+    color: AppColors.primary,
+    fontSize: 13,
+    fontWeight: FontWeight.w500,
+  );
   static const TextStyle textStyle14W500 = TextStyle(
     fontWeight: FontWeight.w500,
     fontSize: 14,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_courses_section.dart';
 import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_header.dart';
 import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_info_section.dart';
 import 'package:flutter_task05_skills_academy_beg/features/my_learning/presentation/views/widgets/my_learning_path_header.dart';
@@ -18,6 +19,7 @@ class MyLearningViewBody extends StatelessWidget {
             const MyLearningInfoSection(),
             const SizedBox(height: 8),
             MyLearningPathHeader(onPressed: () {}),
+            const MyLearningCoursesSection(),
           ],
         ),
       ),

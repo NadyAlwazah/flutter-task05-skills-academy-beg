@@ -11,11 +11,17 @@ class AssetsData {
   static const fullstackWeb = "assets/images/fullstack_web.jpg";
   static const dataScience = "assets/images/data_science.jpg";
   static const brandingMasterclass = "assets/images/branding_masterclass.png";
-  static const agileLeadershipCourse =
-      "assets/images/agile_leadership_course.png";
   static const appBarActionsDetailsViewSvg =
       "assets/images/appBarActionsDetailsView.svg";
   static const accountPhoto = "assets/images/account.png";
   static const medalStarSvg = "assets/images/medal_star_svg.svg";
   static const myLearningProfile = "assets/images/my_learning_profile.png";
+  static const myLearningReactCourseImage =
+      "assets/images/webdev_react_laptop.png";
+  static const myLearningdataScience =
+      "assets/images/my_learning_data_science.png";
+  static const myLearningUiUxDesignCourse =
+      "assets/images/my_learning_uiux_design_course.png";
+  static const myLearningAgileLeadershipCourse =
+      "assets/images/agile_leadership_course.png";
 }
