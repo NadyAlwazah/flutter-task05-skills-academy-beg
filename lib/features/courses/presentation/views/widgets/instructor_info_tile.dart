@@ -13,14 +13,14 @@ class InstructorInfoTile extends StatelessWidget {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       tileColor: Colors.white,
       leading: CircleAvatar(
-        radius: 20,
+        radius: 18,
         backgroundColor: Colors.transparent,
         child: ClipOval(
           child: Image.asset(
             AssetsData.instructorProfile,
             fit: BoxFit.cover,
-            width: 40,
-            height: 40,
+            width: 36,
+            height: 36,
           ),
         ),
       ),
