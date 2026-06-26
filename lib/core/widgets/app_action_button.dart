@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppActionButton extends StatelessWidget {
   final String text;
@@ -14,15 +15,14 @@ class AppActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final heightButton = MediaQuery.of(context).size.height * .065;
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
-        maximumSize: Size(double.infinity, heightButton),
+        maximumSize: Size(double.infinity, 40.h),
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(8.r),
           side: const BorderSide(color: Color(0xFFC4C3CB)),
         ),
       ),
@@ -33,9 +33,9 @@ class AppActionButton extends StatelessWidget {
           const SizedBox(width: 10),
           Text(
             text,
-            style: const TextStyle(
-              color: Color(0xFF2F2F39),
-              fontSize: 16,
+            style: TextStyle(
+              color: const Color(0xFF2F2F39),
+              fontSize: 8.sp,
               fontWeight: FontWeight.w400,
             ),
           ),
