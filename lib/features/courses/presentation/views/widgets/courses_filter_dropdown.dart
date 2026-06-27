@@ -19,11 +19,26 @@ class CoursesFilterDropdown extends StatelessWidget {
         isExpanded: true,
         icon: const Icon(Icons.arrow_drop_down),
         items: const [
-          DropdownMenuItem(value: 'All Courses', child: Text('All Courses')),
-          DropdownMenuItem(value: 'IT Course', child: Text('IT Course')),
+          DropdownMenuItem(
+            value: 'All Courses',
+            child: Padding(
+              padding: EdgeInsets.only(left: 8.0),
+              child: Text('All Courses'),
+            ),
+          ),
+          DropdownMenuItem(
+            value: 'IT Course',
+            child: Padding(
+              padding: EdgeInsets.only(left: 8),
+              child: Text('IT Course'),
+            ),
+          ),
           DropdownMenuItem(
             value: 'Languages Course',
-            child: Text('Languages Course'),
+            child: Padding(
+              padding: EdgeInsets.only(left: 8),
+              child: Text('Languages Course'),
+            ),
           ),
         ],
         onChanged: onChanged,

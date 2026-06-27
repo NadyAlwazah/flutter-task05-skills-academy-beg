@@ -7,11 +7,8 @@ class CoursesViewBody extends StatelessWidget {
   final Function(CourseModel course)? onCourseTap;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: SingleChildScrollView(
-        child: Column(children: [CoursesListView(onCourseTap: onCourseTap)]),
-      ),
+    return SingleChildScrollView(
+      child: Column(children: [CoursesListView(onCourseTap: onCourseTap)]),
     );
   }
 }
