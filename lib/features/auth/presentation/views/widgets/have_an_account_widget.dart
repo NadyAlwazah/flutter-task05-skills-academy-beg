@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/utils/styles.dart';
 
 class HaveAnAccountWidget extends StatelessWidget {
@@ -11,10 +12,16 @@ class HaveAnAccountWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text("Already have an account? ", style: Styles.authText),
+        Text(
+          "Already have an account? ",
+          style: Styles.authText.copyWith(fontSize: 10.sp),
+        ),
         GestureDetector(
           onTap: onLoginTap,
-          child: const Text("Log In", style: Styles.authAction),
+          child: Text(
+            "Log In",
+            style: Styles.authAction.copyWith(fontSize: 10.sp),
+          ),
         ),
       ],
     );

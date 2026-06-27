@@ -15,13 +15,13 @@ abstract class Styles {
 
   static const TextStyle authText = TextStyle(
     color: Color(0xFF606168),
-    fontSize: 14,
+    fontSize: 13,
   );
 
   static const TextStyle authAction = TextStyle(
     color: AppColors.primary,
     fontWeight: FontWeight.w600,
-    fontSize: 14,
+    fontSize: 13,
   );
 
   static const TextStyle buttonText = TextStyle(
