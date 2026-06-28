@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 
@@ -32,11 +33,11 @@ class MyLearningCourseCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(16.r),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),
-            blurRadius: 6,
+            blurRadius: 6.r,
             offset: const Offset(0, 3),
           ),
         ],
@@ -82,12 +83,12 @@ class MyLearningCourseCard extends StatelessWidget {
   Widget _buildImageWithStatus() => Stack(
     children: [
       ClipRRect(
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(12.r)),
         child: Image.asset(
           imagePath,
           fit: BoxFit.cover,
           width: double.infinity,
-          height: 160,
+          height: 160.h,
         ),
       ),
       if (status != null)
@@ -98,7 +99,7 @@ class MyLearningCourseCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
             decoration: BoxDecoration(
               color: AppColors.primary,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(12.r),
             ),
             child: Text(status!, style: Styles.textStyle12W500),
           ),
@@ -108,17 +109,19 @@ class MyLearningCourseCard extends StatelessWidget {
 
   Widget _buildTitle() => Text(
     title,
-    style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+    style: TextStyle(fontSize: 22.sp, fontWeight: FontWeight.w600),
   );
 
-  Widget _buildDescription() =>
-      Text(description!, style: Styles.descriptionText.copyWith(fontSize: 14));
+  Widget _buildDescription() => Text(
+    description!,
+    style: Styles.descriptionText.copyWith(fontSize: 14.sp),
+  );
   Widget _buildProgressRow() => Row(
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: [
       Text(
         progressLabel!,
-        style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
+        style: TextStyle(fontSize: 13.sp, fontWeight: FontWeight.w400),
       ),
       if (showProgressValue)
         Text('${progress.toInt()}%', style: Styles.textStyle13W500),
@@ -130,12 +133,12 @@ class MyLearningCourseCard extends StatelessWidget {
     color: AppColors.primary,
     backgroundColor: Colors.grey[300],
     minHeight: 6,
-    borderRadius: BorderRadius.circular(10),
+    borderRadius: BorderRadius.circular(10.r),
   );
   Widget _buildCategory() => Text(
     category!.toUpperCase(),
     style: Styles.descriptionText.copyWith(
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.w600,
       color: const Color(0xFF6A6984),
       letterSpacing: 0.5,
@@ -146,7 +149,9 @@ class MyLearningCourseCard extends StatelessWidget {
     child: ElevatedButton(
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.primary,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(12.r),
+        ),
         padding: const EdgeInsets.symmetric(vertical: 12),
       ),
       onPressed: () {},

@@ -91,10 +91,7 @@ class LanguagesSpecialOfferScreen extends StatelessWidget {
           ),
         ),
         onPressed: () {},
-        child: const Text(
-          "Explore All Languages",
-          style: Styles.textStyle16W600,
-        ),
+        child: Text("Explore All Languages", style: Styles.textStyle16W600),
       ),
     );
   }

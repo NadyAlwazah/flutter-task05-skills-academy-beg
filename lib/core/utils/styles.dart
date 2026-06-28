@@ -45,8 +45,8 @@ abstract class Styles {
     fontSize: 12,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle textStyle16W600 = TextStyle(
-    fontSize: 16,
+  static TextStyle textStyle16W600 = TextStyle(
+    fontSize: 16.sp,
     fontWeight: FontWeight.w600,
     color: Colors.white,
   );
@@ -64,16 +64,16 @@ abstract class Styles {
     letterSpacing: 2,
     fontWeight: FontWeight.w300,
   );
-  static const TextStyle textStyle22W500 = TextStyle(
-    fontSize: 22,
+  static TextStyle textStyle22W500 = TextStyle(
+    fontSize: 22.sp,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle29Bold = TextStyle(
     fontSize: 29.sp,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle textStyle30W700 = TextStyle(
-    fontSize: 30,
+  static TextStyle textStyle30W700 = TextStyle(
+    fontSize: 30.sp,
     fontWeight: FontWeight.w700,
     letterSpacing: 1,
   );
