@@ -12,7 +12,7 @@ class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(16),
+      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 28),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16.r),
@@ -34,7 +34,7 @@ class ProfileCard extends StatelessWidget {
           //  User Name and Email
           Text(
             'Julian Sterling',
-            style: TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 24.sp, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 4),
 

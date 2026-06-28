@@ -12,13 +12,13 @@ class AccountCardsSection extends StatelessWidget {
     Color iconColor = AppColors.primary,
   }) {
     return Container(
-      height: 36.w,
-      width: 36.w,
+      height: 40.w,
+      width: 40.w,
       decoration: BoxDecoration(
         color: bgColor.withOpacity(0.5),
         borderRadius: BorderRadius.circular(8),
       ),
-      child: Icon(iconData, color: iconColor, size: 20.r),
+      child: Icon(iconData, color: iconColor, size: 23.r),
     );
   }
 

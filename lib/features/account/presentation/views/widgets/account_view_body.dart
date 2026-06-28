@@ -16,11 +16,17 @@ class AccountViewBody extends StatelessWidget {
         child: Column(
           children: [
             const ProfileCard(),
+
             const SizedBox(height: 5),
+
             const AccountCardsSection(),
+
             const SizedBox(height: 5),
+
             const StreakCard(),
+
             const SizedBox(height: 25),
+
             SignOutButton(
               onPressed: () {
                 context.go('/');
