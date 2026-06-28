@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 import 'package:flutter_task05_skills_academy_beg/core/widgets/custom_button.dart';
@@ -68,12 +69,15 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 style: Styles.heading1.copyWith(color: AppColors.primary),
               ),
 
-              const Text(
+              Text(
                 "Start your journey with professional-grade learning.",
-                style: TextStyle(color: Color(0xFF2F2F39)),
+                style: TextStyle(
+                  fontSize: 16.sp,
+                  color: const Color(0xFF2F2F39),
+                ),
               ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: 18),
 
               const FormLabel(text: "Full Name"),
 
@@ -83,7 +87,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 validator: Validators.validateFullName,
               ),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: 10),
 
               const FormLabel(text: "Email Address"),
 
@@ -93,7 +97,7 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 validator: Validators.validateEmail,
               ),
 
-              const SizedBox(height: 8),
+              const SizedBox(height: 10),
 
               const FormLabel(text: "Password"),
 
@@ -124,9 +128,11 @@ class _SignupViewBodyState extends State<SignupViewBody> {
 
               const AuthButtonsRow(),
 
-              const SizedBox(height: 100),
+              const SizedBox(height: 80),
 
               const HaveAnAccountWidget(),
+
+              const SizedBox(height: 40),
             ],
           ),
         ),

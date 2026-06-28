@@ -28,7 +28,7 @@ abstract class Styles {
   static TextStyle buttonText = TextStyle(
     color: Colors.white,
     fontWeight: FontWeight.w600,
-    fontSize: 17.sp,
+    fontSize: 20.sp,
   );
   static TextStyle textStyle24Bold = TextStyle(
     fontSize: 24.sp,

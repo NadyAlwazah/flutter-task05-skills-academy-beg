@@ -53,7 +53,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
               )
             : widget.suffixIcon,
         hintText: widget.hintText,
-        hintStyle: TextStyle(fontSize: 14.sp, color: const Color(0xFF777A86)),
+        hintStyle: TextStyle(fontSize: 16.sp, color: const Color(0xFF777A86)),
         filled: true,
         fillColor: const Color(0xFFE0E2EF),
         border: buildBorder(),

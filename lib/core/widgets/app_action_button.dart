@@ -19,7 +19,7 @@ class AppActionButton extends StatelessWidget {
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,
-        maximumSize: Size(double.infinity, 40.h),
+        maximumSize: Size(double.infinity, 50.h),
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.r),
@@ -35,7 +35,7 @@ class AppActionButton extends StatelessWidget {
             text,
             style: TextStyle(
               color: const Color(0xFF2F2F39),
-              fontSize: 8.sp,
+              fontSize: 16.sp,
               fontWeight: FontWeight.w400,
             ),
           ),

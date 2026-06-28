@@ -12,7 +12,7 @@ class OrDivider extends StatelessWidget {
         const SizedBox(width: 20),
         Text(
           "OR SIGN UP WITH",
-          style: TextStyle(fontSize: 13.sp, color: const Color(0xFF777A86)),
+          style: TextStyle(fontSize: 14.sp, color: const Color(0xFF777A86)),
         ),
         const SizedBox(width: 20),
         const Expanded(child: Divider()),

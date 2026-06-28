@@ -14,13 +14,13 @@ class HaveAnAccountWidget extends StatelessWidget {
       children: [
         Text(
           "Already have an account? ",
-          style: Styles.authText.copyWith(fontSize: 10.sp),
+          style: Styles.authText.copyWith(fontSize: 16.sp),
         ),
         GestureDetector(
           onTap: onLoginTap,
           child: Text(
             "Log In",
-            style: Styles.authAction.copyWith(fontSize: 10.sp),
+            style: Styles.authAction.copyWith(fontSize: 16.sp),
           ),
         ),
       ],

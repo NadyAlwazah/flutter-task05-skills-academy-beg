@@ -24,7 +24,7 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
             child: Transform.scale(
-              scale: 1.1.r,
+              scale: 1.2.r,
               child: Checkbox(
                 activeColor: AppColors.primary,
                 value: isChecked,
