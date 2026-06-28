@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 
@@ -24,12 +25,12 @@ class CourseFeaturesSection extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(12.r),
         border: Border.all(color: const Color(0xFFB8BCC0), width: 0.2),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),
-            blurRadius: 6,
+            blurRadius: 6.r,
             offset: const Offset(0, 2),
           ),
         ],
@@ -37,14 +38,14 @@ class CourseFeaturesSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text("Course Features", style: Styles.sectionTitle),
+          Text("Course Features", style: Styles.sectionTitle),
           const SizedBox(height: 12),
           ...features.map(
             (feature) => Padding(
               padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 children: [
-                  Icon(feature["icon"], color: AppColors.primary, size: 22),
+                  Icon(feature["icon"], color: AppColors.primary, size: 22.r),
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(feature["text"], style: Styles.textStyle14W500),
@@ -53,7 +54,7 @@ class CourseFeaturesSection extends StatelessWidget {
               ),
             ),
           ),
-          const Divider(height: 24, color: Color(0xFFF4F4F4)),
+          Divider(height: 24.h, color: const Color(0xFFF4F4F4)),
           Text(
             "Regular Price",
             style: Styles.descriptionText.copyWith(fontWeight: FontWeight.w600),

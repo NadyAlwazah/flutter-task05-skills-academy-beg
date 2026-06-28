@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 
 abstract class Styles {
-  static TextStyle appBarTitle = const TextStyle(
+  static TextStyle appBarTitle = TextStyle(
     color: AppColors.primary,
     fontWeight: FontWeight.w500,
-    fontSize: 26,
+    fontSize: 26.sp,
   );
 
   static const TextStyle heading1 = TextStyle(
@@ -30,14 +30,14 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
     fontSize: 17,
   );
-  static const TextStyle textStyle24Bold = TextStyle(
-    fontSize: 24,
+  static TextStyle textStyle24Bold = TextStyle(
+    fontSize: 24.sp,
     color: Colors.white,
     fontWeight: FontWeight.bold,
   );
-  static const TextStyle textStyle15W500 = TextStyle(
+  static TextStyle textStyle15W500 = TextStyle(
     color: Colors.white,
-    fontSize: 15,
+    fontSize: 15.sp,
     fontWeight: FontWeight.w500,
   );
   static const TextStyle textStyle12W500 = TextStyle(
@@ -55,9 +55,9 @@ abstract class Styles {
     fontSize: 13,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle textStyle14W500 = TextStyle(
+  static TextStyle textStyle14W500 = TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 14,
+    fontSize: 14.sp,
   );
   static TextStyle textStyle22W300 = TextStyle(
     fontSize: 22.sp,
@@ -77,25 +77,25 @@ abstract class Styles {
     fontWeight: FontWeight.w700,
     letterSpacing: 1,
   );
-  static const TextStyle instructorLabel = TextStyle(
-    color: Color(0xFF606168),
-    fontSize: 12,
+  static TextStyle instructorLabel = TextStyle(
+    color: const Color(0xFF606168),
+    fontSize: 12.sp,
     letterSpacing: 2,
     fontWeight: FontWeight.w500,
   );
 
-  static const TextStyle instructorName = TextStyle(
+  static TextStyle instructorName = TextStyle(
     color: AppColors.primary,
-    fontSize: 20,
+    fontSize: 20.sp,
     fontWeight: FontWeight.w500,
   );
 
-  static const TextStyle descriptionText = TextStyle(
-    color: Color(0xFF606168),
-    fontSize: 15,
+  static TextStyle descriptionText = TextStyle(
+    color: const Color(0xFF606168),
+    fontSize: 15.sp,
   );
-  static const TextStyle sectionTitle = TextStyle(
-    fontSize: 18,
+  static TextStyle sectionTitle = TextStyle(
+    fontSize: 18.sp,
     fontWeight: FontWeight.w500,
   );
 }

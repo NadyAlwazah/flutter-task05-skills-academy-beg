@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/info_card.dart';
 
@@ -30,7 +31,7 @@ List<Widget> buildAccountCards({
       description: 'Privacy, security, and notification preferences.',
       actionLabel: 'Edit Profile',
       actionIcon: Icons.arrow_forward_ios_rounded,
-      actionIconSize: 14,
+      actionIconSize: 14.r,
       onActionTap: () {},
     ),
 
@@ -45,7 +46,7 @@ List<Widget> buildAccountCards({
       description: 'Browse FAQs or contact our dedicated academic support.',
       actionLabel: 'Visit Support',
       actionIcon: Icons.arrow_forward_ios_rounded,
-      actionIconSize: 14,
+      actionIconSize: 14.r,
       onActionTap: () {},
     ),
   ];

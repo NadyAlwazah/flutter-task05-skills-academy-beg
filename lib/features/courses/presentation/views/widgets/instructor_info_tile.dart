@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 
@@ -10,21 +11,21 @@ class InstructorInfoTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12.r)),
       tileColor: Colors.white,
       leading: CircleAvatar(
-        radius: 18,
+        radius: 18.r,
         backgroundColor: Colors.transparent,
         child: ClipOval(
           child: Image.asset(
             AssetsData.instructorProfile,
             fit: BoxFit.cover,
-            width: 36,
-            height: 36,
+            width: 36.w,
+            height: 36.w,
           ),
         ),
       ),
-      title: const Text("INSTRUCTOR", style: Styles.instructorLabel),
+      title: Text("INSTRUCTOR", style: Styles.instructorLabel),
       subtitle: Text(instructorName, style: Styles.instructorName),
     );
   }

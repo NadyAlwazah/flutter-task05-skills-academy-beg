@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 
 class CourseCardItem extends StatelessWidget {
@@ -34,11 +35,11 @@ class CourseCardItem extends StatelessWidget {
         margin: const EdgeInsets.symmetric(vertical: 8),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(12.r),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(0.05),
-              blurRadius: 6,
+              blurRadius: 6.r,
               offset: const Offset(0, 3),
             ),
           ],
@@ -50,12 +51,12 @@ class CourseCardItem extends StatelessWidget {
             Stack(
               children: [
                 ClipRRect(
-                  borderRadius: const BorderRadius.vertical(
-                    top: Radius.circular(12),
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(12.r),
                   ),
                   child: Image.asset(
                     imagePath,
-                    height: 160,
+                    height: 160.h,
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
@@ -70,11 +71,14 @@ class CourseCardItem extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: categoryBackgroundColor,
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadius.circular(12.r),
                     ),
                     child: Text(
                       category,
-                      style: TextStyle(color: categoryTextColor, fontSize: 12),
+                      style: TextStyle(
+                        color: categoryTextColor,
+                        fontSize: 12.sp,
+                      ),
                     ),
                   ),
                 ),
@@ -89,18 +93,18 @@ class CourseCardItem extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      fontSize: 20,
+                      fontSize: 20.sp,
                     ),
                   ),
                   const SizedBox(height: 4),
                   Row(
                     children: [
-                      const Icon(
+                      Icon(
                         Icons.person_outline,
                         color: Colors.grey,
-                        size: 14,
+                        size: 14.r,
                       ),
                       const SizedBox(width: 5),
                       Text(
@@ -116,9 +120,9 @@ class CourseCardItem extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          const Icon(
+                          Icon(
                             Icons.star_border_purple500_outlined,
-                            size: 16,
+                            size: 16.r,
                           ),
                           const SizedBox(width: 4),
                           Text(rating.toString()),

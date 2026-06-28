@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 
@@ -32,7 +33,7 @@ class InfoCard extends StatelessWidget {
       padding: const EdgeInsets.only(top: 16, left: 16),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(16.r),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.05),
@@ -73,7 +74,7 @@ class InfoCard extends StatelessWidget {
               const SizedBox(height: 8),
               Text(
                 description,
-                style: Styles.descriptionText.copyWith(fontSize: 16),
+                style: Styles.descriptionText.copyWith(fontSize: 16.sp),
               ),
               const SizedBox(height: 12),
               GestureDetector(
@@ -82,10 +83,10 @@ class InfoCard extends StatelessWidget {
                   children: [
                     Text(
                       actionLabel,
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: AppColors.primary,
                         fontWeight: FontWeight.w500,
-                        fontSize: 13,
+                        fontSize: 13.sp,
                       ),
                     ),
                     const SizedBox(width: 5),

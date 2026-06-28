@@ -19,7 +19,7 @@ class LanguagesSpecialOfferScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            const Text("Available Offers", style: Styles.sectionTitle),
+            Text("Available Offers", style: Styles.sectionTitle),
 
             const SizedBox(height: 12),
 

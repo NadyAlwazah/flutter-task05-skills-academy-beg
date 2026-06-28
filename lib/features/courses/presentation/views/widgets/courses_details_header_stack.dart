@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
@@ -28,7 +29,7 @@ class CoursesDetailsHeaderStack extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     color: AppColors.primary,
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(12.r),
                   ),
                   child: const Text(
                     "Bestseller",
@@ -47,7 +48,7 @@ class CoursesDetailsHeaderStack extends StatelessWidget {
                 ),
 
                 // Description
-                const Text(
+                Text(
                   "Build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.",
                   style: Styles.textStyle15W500,
                 ),

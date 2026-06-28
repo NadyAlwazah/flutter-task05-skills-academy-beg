@@ -6,11 +6,11 @@ class AboutCourseSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("About this Course", style: Styles.sectionTitle),
-        SizedBox(height: 8),
+        const SizedBox(height: 8),
         Text(
           "Master Flutter and Dart from scratch. This comprehensive course covers reactive programming, advanced state management with Bloc, and professional UI animations. You will build three production‑grade apps, gaining the practical skills needed for a professional career in mobile and desktop development.",
           style: Styles.descriptionText,
