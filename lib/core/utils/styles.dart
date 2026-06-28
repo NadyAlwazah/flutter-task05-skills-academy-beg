@@ -9,26 +9,26 @@ abstract class Styles {
     fontSize: 26.sp,
   );
 
-  static const TextStyle heading1 = TextStyle(
-    fontSize: 34,
+  static TextStyle heading1 = TextStyle(
+    fontSize: 34.sp,
     fontWeight: FontWeight.bold,
   );
 
-  static const TextStyle authText = TextStyle(
-    color: Color(0xFF606168),
-    fontSize: 13,
+  static TextStyle authText = TextStyle(
+    color: const Color(0xFF606168),
+    fontSize: 13.sp,
   );
 
-  static const TextStyle authAction = TextStyle(
+  static TextStyle authAction = TextStyle(
     color: AppColors.primary,
     fontWeight: FontWeight.w600,
-    fontSize: 13,
+    fontSize: 13.sp,
   );
 
-  static const TextStyle buttonText = TextStyle(
+  static TextStyle buttonText = TextStyle(
     color: Colors.white,
     fontWeight: FontWeight.w600,
-    fontSize: 17,
+    fontSize: 17.sp,
   );
   static TextStyle textStyle24Bold = TextStyle(
     fontSize: 24.sp,
@@ -40,9 +40,9 @@ abstract class Styles {
     fontSize: 15.sp,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle textStyle12W500 = TextStyle(
+  static TextStyle textStyle12W500 = TextStyle(
     color: Colors.white,
-    fontSize: 12,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle16W600 = TextStyle(
@@ -50,9 +50,9 @@ abstract class Styles {
     fontWeight: FontWeight.w600,
     color: Colors.white,
   );
-  static const TextStyle textStyle13W500 = TextStyle(
+  static TextStyle textStyle13W500 = TextStyle(
     color: AppColors.primary,
-    fontSize: 13,
+    fontSize: 13.sp,
     fontWeight: FontWeight.w500,
   );
   static TextStyle textStyle14W500 = TextStyle(

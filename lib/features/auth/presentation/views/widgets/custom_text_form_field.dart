@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTextFormField extends StatefulWidget {
   const CustomTextFormField({
@@ -52,7 +53,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
               )
             : widget.suffixIcon,
         hintText: widget.hintText,
-        hintStyle: const TextStyle(color: Color(0xFF777A86)),
+        hintStyle: TextStyle(fontSize: 14.sp, color: const Color(0xFF777A86)),
         filled: true,
         fillColor: const Color(0xFFE0E2EF),
         border: buildBorder(),
@@ -64,7 +65,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
 
   OutlineInputBorder buildBorder() {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
+      borderRadius: BorderRadius.circular(8.r),
       borderSide: const BorderSide(width: 1, color: Color(0xFFC5C6D2)),
     );
   }
