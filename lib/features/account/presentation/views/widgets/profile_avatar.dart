@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
 
@@ -10,13 +11,13 @@ class ProfileAvatar extends StatelessWidget {
     return Stack(
       alignment: Alignment.bottomRight,
       children: [
-        const CircleAvatar(
+        CircleAvatar(
           backgroundColor: AppColors.second,
-          radius: 40,
+          radius: 40.r,
           child: CircleAvatar(
             backgroundColor: Colors.white,
-            radius: 37,
-            backgroundImage: AssetImage(AssetsData.accountPhoto),
+            radius: 37.r,
+            backgroundImage: const AssetImage(AssetsData.accountPhoto),
           ),
         ),
         InkWell(
@@ -27,11 +28,7 @@ class ProfileAvatar extends StatelessWidget {
               shape: BoxShape.circle,
             ),
             padding: const EdgeInsets.all(6),
-            child: const Icon(
-              Icons.edit_outlined,
-              color: Colors.white,
-              size: 16,
-            ),
+            child: Icon(Icons.edit_outlined, color: Colors.white, size: 16.r),
           ),
         ),
       ],

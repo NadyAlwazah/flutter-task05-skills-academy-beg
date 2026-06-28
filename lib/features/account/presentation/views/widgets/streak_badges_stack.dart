@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/assets.dart';
@@ -9,7 +10,7 @@ class StreakBadgesStack extends StatelessWidget {
   Widget _buildBadge({required Widget widget, required Color backgroundColor}) {
     return CircleAvatar(
       backgroundColor: backgroundColor,
-      radius: 20,
+      radius: 20.r,
       child: widget,
     );
   }
@@ -18,7 +19,7 @@ class StreakBadgesStack extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: SizedBox(
-        width: 100,
+        width: 100.w,
         child: Stack(
           clipBehavior: Clip.none,
           children: [
@@ -34,8 +35,8 @@ class StreakBadgesStack extends StatelessWidget {
               child: _buildBadge(
                 widget: SvgPicture.asset(
                   AssetsData.medalStarSvg,
-                  width: 25,
-                  height: 25,
+                  width: 25.w,
+                  height: 25.w,
                   color: Colors.white,
                 ),
                 backgroundColor: Colors.amber,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 import 'package:flutter_task05_skills_academy_beg/core/utils/styles.dart';
 import 'package:flutter_task05_skills_academy_beg/features/account/presentation/views/widgets/streak_badges_stack.dart';
@@ -12,7 +13,7 @@ class StreakCard extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppColors.primary,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(12.r),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,9 +30,9 @@ class StreakCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          const Text(
+          Text(
             "You're in the top 5% of learners this month. Keep up the momentum to unlock the \"Mastery\" badge.",
-            style: TextStyle(color: Colors.white70, fontSize: 16),
+            style: TextStyle(color: Colors.white70, fontSize: 17.sp),
           ),
           const SizedBox(height: 16),
 

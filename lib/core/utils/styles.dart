@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_task05_skills_academy_beg/core/theme/app_colors.dart';
 
 abstract class Styles {
@@ -58,8 +59,8 @@ abstract class Styles {
     fontWeight: FontWeight.w500,
     fontSize: 14,
   );
-  static const TextStyle textStyle22W300 = TextStyle(
-    fontSize: 22,
+  static TextStyle textStyle22W300 = TextStyle(
+    fontSize: 22.sp,
     letterSpacing: 2,
     fontWeight: FontWeight.w300,
   );
@@ -67,8 +68,8 @@ abstract class Styles {
     fontSize: 22,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle textStyle29Bold = TextStyle(
-    fontSize: 29,
+  static TextStyle textStyle29Bold = TextStyle(
+    fontSize: 29.sp,
     fontWeight: FontWeight.bold,
   );
   static const TextStyle textStyle30W700 = TextStyle(
